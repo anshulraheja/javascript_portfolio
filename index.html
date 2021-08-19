@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Anshul Raheja</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar-section">
+        <h1 class="nav-logo"><a href="index.html#home-section">&lt; A &gt;</a></h1>
+        <div class="menu-icon ">
+            <i class ="icon fas fa-bars"> </i>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-links"><a href="index.html#about-section">about</a></li>
+            <li class="nav-links"><a href="index.html#skill-section">skills</a></li>
+            <li class="nav-links"><a href="index.html#project-section">projects</a></li>
+            <li class="nav-links"><a href="index.html#blog-section">blogs</a></li>
+            <li class="nav-links"><a href="index.html#contact-section">contact me</a></li>
+            <li class="nav-links-mobile"><a href="../portfolio/assets/Resume_AnshulRaheja.pdf" ">Resume</a></li>
+        </ul>
+        <button class="btn btn--resume btn--medium"><a href="../portfolio/assets/Resume_AnshulRaheja.pdf" >Resume</a></button>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home" id="home-section">
+        <div class="home-data">
+            <h1 class="home-title">Hi,<br/>I'm <span class="home-title-name">Anshul</span><br/>&lt; web developer/&gt; </h1>
+            <button class="btn btn--mail btn--medium"><a href="mailto:anshul.r1610@gmail.com" target="_blank" rel="noreferrer">e-mail</a></button>
+            <div class="home-social-icon">
+                <a href="https://www.linkedin.com/in/anshul-raheja/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/anshulraheja" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
+                <a href="https://leetcode.com/anshulraheja/" target="_blank" rel="noopener noreferrer"><i class="iconify" data-icon="simple-icons:leetcode"></i></a>
+            </div>
+        </div>
+        <div>
+            <img src="./assets/web_developer_undraw_1.svg" alt="face" class="home-img" ></img>
+        </div>  
+    </section>
+
+    <!-- About section -->
+    <section class="About" id="about-section">
+        <div class="About-data">
+            <h2 class="About-title">about</h2>
+            <p class="About-content">Creative front-end web developer. Highly passionate to build React-based web apps. With 1 year of corporate work experience in javascript and java, I aspire to integrate my problem solving  and designing skills to excel as a Full Stack Developer</p>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skill-section" id="skill-section">
+        <div class="skill-content">
+            <h2>skills</h2>
+            <p>React | Javascript | CCS3 | HTML5 | Nodejs | MongoDB</p>
+            <p>Java | SQL </p>
+            <p>Data Strucutre and Algorithm</p>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="project-section" id="project-section">
+        <div class="project-data">
+            <h2 class="project-title">projects</h2>
+            <p class="project-content">Creative front-end web developer. Highly passionate to build React-based web apps. With 1 year of corporate work experience in javascript and java, I aspire to integrate my problem solving  and designing skills to excel as a Full Stack Developer</p>
+            <button class="btn--primary btn--secondary">see projects</button>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section" id="blog-section">
+        <div class="blog-data">
+            <h2 class="blog-title">blogs</h2>
+            <p class="blog-content">Creative front-end web developer. Highly passionate to build React-based web apps. With 1 year of corporate work experience in javascript and java, I aspire to integrate my problem solving  and designing skills to excel as a Full Stack Developer</p>
+            <button class="btn--primary btn--secondary">see blogs</button>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact-section" id="contact-section">
+        <form>
+        <div class="container">
+            <div class="contact-box">
+                <div class="right">
+                    <h2>contact me</h2>
+                    <input ref={nameInput} type="text" class="field" placeholder="name" autoComplete="off" />
+                    <input ref={emailInput} type="text" class="field" placeholder="email"autoComplete="off"/>
+                    <textarea ref={messageInput} placeholder="message" class="field" ></textarea>
+                    <input  type="submit"class="btn--primary" value="Send" onClick={handleSubmit}/>			        
+                </div>
+            </div>
+        </div>
+        </form>
+    </section>
+</body>
+<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+<script src="index.js"></script>    
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+</style>
+</html>
