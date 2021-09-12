@@ -56,8 +56,8 @@
     {
         "title":"Portfolio",
         "description":"Converts the English language to banana language that the minion use.",
-        "live" : "",
-        "sourceCode":"hhttps://github.com/anshulraheja/javascript_portfolio"
+        "live" : "https://js-anshul-raheja-portfolio.netlify.app",
+        "sourceCode":"https://github.com/anshulraheja/javascript_portfolio"
     },
     {
         "title":"CLI FRIENDS Quiz App",
