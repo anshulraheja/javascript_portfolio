@@ -18,12 +18,12 @@
         <ul class="nav-menu">
             <li class="nav-links"><a href="index.html#about-section">about</a></li>
             <li class="nav-links"><a href="index.html#skill-section">skills</a></li>
-            <li class="nav-links"><a href="index.html#project-section">projects</a></li>
-            <li class="nav-links"><a href="index.html#blog-section">blogs</a></li>
+            <li class="nav-links"><a href="./project.html">projects</a></li>
+            <li class="nav-links"><a href="./blog.html">blogs</a></li>
             <li class="nav-links"><a href="index.html#contact-section">contact me</a></li>
-            <li class="nav-links-mobile"><a href="../portfolio/assets/Resume_AnshulRaheja.pdf" ">Resume</a></li>
+            <li class="nav-links-mobile"><a href="./assets/Resume_AnshulRaheja.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
         </ul>
-        <button class="btn btn--resume btn--medium"><a href="../portfolio/assets/Resume_AnshulRaheja.pdf" >Resume</a></button>
+        <button class="btn btn--resume btn--medium"><a href="./assets/Resume_AnshulRaheja.pdf" target="_blank" rel="noopener noreferrer">Resume</a></button>
     </nav>
 
     <!-- Home Section -->
@@ -46,7 +46,7 @@
     <section class="About" id="about-section">
         <div class="About-data">
             <h2 class="About-title">about</h2>
-            <p class="About-content">Creative front-end web developer. Highly passionate to build React-based web apps. With 1 year of corporate work experience in javascript and java, I aspire to integrate my problem solving  and designing skills to excel as a Full Stack Developer</p>
+            <p class="About-content">Front-end web developer with a creative flair. I am extremely enthusiastic about developing React-based web apps. With one year of corporate work experience in JavaScript and Java, I hope to combine my problem-solving and design abilities to excel as a Full Stack Developer.</p>
         </div>
     </section>
 
@@ -64,8 +64,8 @@
     <section class="project-section" id="project-section">
         <div class="project-data">
             <h2 class="project-title">projects</h2>
-            <p class="project-content">Creative front-end web developer. Highly passionate to build React-based web apps. With 1 year of corporate work experience in javascript and java, I aspire to integrate my problem solving  and designing skills to excel as a Full Stack Developer</p>
-            <button class="btn--primary btn--secondary"><a href="./project.html">see projects</a></button>
+            <p class="project-content">Take a look at my web development projects</p>
+            <button class="btn--primary btn--secondary"><a href="./project.html">browse projects</a></button>
         </div>
     </section>
 
@@ -73,7 +73,7 @@
     <section class="blog-section" id="blog-section">
         <div class="blog-data">
             <h2 class="blog-title">blogs</h2>
-            <p class="blog-content">Creative front-end web developer. Highly passionate to build React-based web apps. With 1 year of corporate work experience in javascript and java, I aspire to integrate my problem solving  and designing skills to excel as a Full Stack Developer</p>
+            <p class="blog-content">I've recently started writing tech blogs. These blogs will serve as my go-to source of information for my future self.</p>
             <button class="btn--primary btn--secondary"><a href="./blog.html">see blogs</a></button>
         </div>
     </section>
@@ -81,17 +81,18 @@
     <!-- contact section -->
     <section class="contact-section" id="contact-section">
         <form>
-        <div class="container">
-            <div class="contact-box">
-                <div class="right">
-                    <h2>contact me</h2>
-                    <input ref={nameInput} type="text" class="field" placeholder="name" autoComplete="off" />
-                    <input ref={emailInput} type="text" class="field" placeholder="email"autoComplete="off"/>
-                    <textarea ref={messageInput} placeholder="message" class="field" ></textarea>
-                    <input  type="submit"class="btn--primary" value="Send" onClick={handleSubmit}/>			        
+            <div class="container">
+                <div class="contact-box">
+                    <div class="right">
+                        <h2>contact me</h2>
+                        <input type="text" class="field" placeholder="name" />
+                        <input type="text" class="field" placeholder="email"/>
+                        <textarea placeholder="message" class="field" ></textarea>
+                        <input id='submit' type="submit"class="btn--primary" value="Send"/>			      
+                        <p id=output></p>  
+                    </div>
                 </div>
             </div>
-        </div>
         </form>
     </section>
 </body>

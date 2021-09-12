@@ -19,7 +19,16 @@ window.onload = function() {
         }
     })
 
-    // Project Section
+    //Contact section
+    const submit = document.querySelector('#submit')
+    submit.addEventListener('click', (event) => {
+        
+        const text='Response sent. Thank you!'
+        document.getElementById("output").innerHTML = text;
+        setTimeout(function(){
+            document.getElementById("output").innerHTML = '';
+        }, 2000);
+    });
 }
 
 
