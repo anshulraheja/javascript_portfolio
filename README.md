@@ -2,11 +2,12 @@
 
 ### Description
 
-This is the javscript version of my portfolio
+This is the javscript version of my portfolio.
 
 ### Tech Stack
 
 JavaScript, HTML, CSS
+
 
 # Installation
 

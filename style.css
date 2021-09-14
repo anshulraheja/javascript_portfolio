@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 :root {
     --dark: #437fc7;
     --light: #6daffe;
     --lighter: #edf6ff;
     --shadowDark: #b9732f;
     --shadowLight: #ffffff;
-    --body-font:'Atkinson Hyperlegible', sans-serif
+    --body-font: 'Poppins', sans-serif;
+}
+html{
+    font-size: 16px;
 }
 * {
     box-sizing: border-box;
@@ -14,23 +18,25 @@
 }
 a{
     color: white;
+    cursor: pointer;
+    text-decoration: none;
 }
 /* navabar */
 .navbar-section {
     background: var(--dark);
-    height: 80px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    padding: 0.5rem;
 }
-
-.nav-logo a{
-    color: var(--shadowLight);
-    justify-self: start;
+.nav-links {
+    padding: 0.2rem 0.2rem;
     margin-left: 20px;
-    cursor: pointer;
-    text-decoration: none;
+}
+.nav-logo{
+    font-size: 1.6rem;
 }
 .nav-logo a:hover{
     color: var(--shadowDark);
@@ -50,9 +56,7 @@ a{
     justify-content: end;
     margin-right: 2rem;
 }
-.nav-links {
-    padding: 0.5rem 1rem;
-}
+
 
 .nav-links:hover {
     background-color: var(--shadowDark);
@@ -61,6 +65,7 @@ a{
 }
 
 .fa-bars {
+    font-size: 1.6rem;
     color: var(--shadowLight);
 }
 .fa-bars:hover{
@@ -83,10 +88,10 @@ a{
     .nav-menu {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         position: absolute;
-        top: 80px;
+        top: 70px;
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -124,8 +129,8 @@ a{
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-100%, 60%);
-        font-size: 1.8rem;
+        transform: translate(-55%, 50%);
+        font-size: 1.6rem;
         cursor: pointer;
     }
 
@@ -165,21 +170,22 @@ a{
 
 /* Home Section */
 .home{
-    height: 90vh;
+    height: max-content;
     background-color: var(--lighter);
     display: flex;
     justify-content:space-evenly;
     color: rgb(0, 0, 0);
-    margin-bottom: 5%;
+    margin-bottom: 3rem;
+    padding: 0.5rem;
+    font-size:62.5%;
 }
 .home-data{
-    margin-top:10%;
-    font-size:50px;
+    font-size:5em;
     display: flex;
     flex-direction:column;
 }
 .home-title{
-  padding:10px;
+  padding:1rem;
 }
 .home-title-name{
     color: var(--shadowDark);
@@ -188,50 +194,53 @@ a{
 .home-social-icon{
     display: flex;
     justify-content:center;
-    align-items:flex-end;
+    align-items:center;
 }
 .home-social-icon a{
-    padding: 2% 5% 2% 5%;
+    padding: 1rem;
     color:var(--dark);
 }
+.img-container{
+    padding: 1em;
+}
 .home-img{
-   margin-top:80px;
-   width:550px;
-   height:550px; 
+   width:55em;
+   height:55em; 
 }
 
-@media screen and (max-width: 895px){
+@media screen and (max-width: 1024px){
+    .html{
+        font-size: 14px;
+    }
+    .home-data{
+        font-size:4em;
+    }
+}
+@media screen and ( max-width:768px){
+    .html{
+        font-size: 12px;
+    }
+    .home-data{
+        font-size:3em;
+    }
+    .home-img{
+        width:30em;
+        height:30em; 
+    }
+}
+@media screen and ( max-width:426px){
+    .html{
+        font-size: 10px;
+    }
+}
+@media screen and ( max-width:426px){
+    .html{
+        font-size: 9px;
+    }
     .home{
-        height: 90vh;
-        background-color: var(--lighter);
-        display: flex;
         flex-direction: column;
-        justify-content:space-around;
-        align-items:center;
-        color: rgb(0, 0, 0);
-
     }
-    .home-data{
-        margin-top: 18%;
-        font-size:40px;
-    }
-    .home-img{
-        margin-top:10px;
-        width:350px;
-        height:350px; 
-     }
 }
-@media screen and ( max-width:525px){
-    .home-data{
-        font-size: 25px;
-    }
-    .home-img{
-        margin-top:20px;
-        width:250px;
-        height:250px; 
-     }
-}
-
 /* About section */
 .About{
     min-height:40vh;
@@ -242,7 +251,8 @@ a{
 }
 .About-data{
     width: 50%;
-    margin-top: 3%;
+    min-width: 250px;
+    margin-top: 1rem;
     text-align: center;
 }
 .About-title{
@@ -268,7 +278,6 @@ a{
     font-size: 20px;
 }
 
-
 @media screen and (max-width: 562px){
     .About-title{
         font-size:35px;    
@@ -287,11 +296,12 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 3%;
+    margin-top: 2rem;
 
 }
 .skill-content{
     width: 50%;
+    min-width: 250px;
     text-align: center;
 }
 .skill-content h2{
@@ -331,11 +341,12 @@ a{
     display:flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 3%;
+    margin-top: 2rem;
 }
 .project-data{
     width: 50%;
-    margin-top: 3%;
+    min-width: 250px;
+    margin-top: 2rem;
     text-align: center;
 }
 .project-title{
@@ -379,11 +390,12 @@ a{
     display:flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 3%;
+    margin-top: 2rem;
 }
 .blog-data{
     width: 50%;
-    margin-top: 3%;
+    min-width: 250px;
+    margin-top: 1rem;
     text-align: center;
 }
 .blog-title{
@@ -422,8 +434,8 @@ a{
 
 /* Contact Section */
 .contact-section{
-	height: 80vh;
-	margin-top:3%;
+	height: 100vh;
+	margin-top:2rem;
 	background-color: var(--lighter);
 }
 .container{
@@ -478,6 +490,7 @@ a{
 	font-size: 1.1rem;
 	margin-bottom: 22px;
 	transition: .3s;
+    border-radius: 20px;
 }
 
 .field:hover{
@@ -511,18 +524,22 @@ textarea{
     background-color: transparent;
     color:var(--lighter);
     border: 2px solid var(--lighter);
+    border-radius: 10px;
 }
 .btn--resume:hover{
-    background-color: var(--lighter);   
+    background-color: var(--shadowDark);   
 }
 .btn--resume a:hover{
-    color:var(--shadowDark); 
+    /* color:var(--shadowDark);  */
 }
 .btn--mail {
     background-color: var(--dark);
     border: 2px solid var(--lighter);
     margin-top:10%;
-    border-radius: 30px;
+    border-radius: 20px;
+    width: 60%;
+    align-self: center;
+    min-width: 250px;
 }
 .btn--mail:hover{
     background-color:var(--shadowDark); 
@@ -538,6 +555,7 @@ textarea{
 	outline: none;
 	cursor: pointer;
 	transition: .3s;
+    border-radius: 20px;
 }
 .btn--primary:hover{
     background-color: var(--light);
