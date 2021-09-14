@@ -26,7 +26,7 @@
     {
         "title":"Cash Register",
         "description":"The app tells the cashier how many notes of each currency needs to be returned based on the bill amount and cash given",
-        "live" : "https://markten-cash-resigter.netlify.app",
+        "live" : "https://markten-cash-register.netlify.app/",
         "sourceCode":"https://github.com/anshulraheja/levelZero_markTen"
     },
     {
